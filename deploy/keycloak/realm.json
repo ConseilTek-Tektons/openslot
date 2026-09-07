@@ -1,0 +1,29 @@
+{
+  "realm": "openslot",
+  "enabled": true,
+  "displayName": "Openslot local identity broker",
+  "registrationAllowed": false,
+  "loginWithEmailAllowed": true,
+  "clients": [
+    {
+      "clientId": "openslot-web",
+      "name": "Openslot Web",
+      "enabled": true,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "local-dev-secret",
+      "standardFlowEnabled": true,
+      "directAccessGrantsEnabled": false,
+      "redirectUris": ["http://localhost:3000/api/auth/callback/enterprise-sso"],
+      "webOrigins": ["http://localhost:3000"],
+      "protocol": "openid-connect",
+      "defaultClientScopes": ["web-origins", "acr", "roles", "profile", "email", "groups"]
+    }
+  ],
+  "groups": [
+    { "name": "openslot-owners" },
+    { "name": "openslot-admins" },
+    { "name": "revenue-managers" },
+    { "name": "booking-hosts" },
+    { "name": "revenue-analytics" }
+  ]
+}

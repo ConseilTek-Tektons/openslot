@@ -1,0 +1,43 @@
+export const rbacConfig = {
+  roles: {
+    owner: { label: "Owner", description: "Full control, including security and billing." },
+    admin: { label: "Admin", description: "Manages the workspace, integrations, and access." },
+    manager: { label: "Manager", description: "Runs teams, routing, and analytics." },
+    host: { label: "Host", description: "Manages personal availability and bookings." },
+    analyst: { label: "Analyst", description: "Views bookings and analytics." },
+    viewer: { label: "Viewer", description: "Read-only access to shared schedules." },
+  },
+  permissions: {
+    "dashboard.view": "View workspace dashboard",
+    "bookings.manage": "Create, reschedule, and cancel bookings",
+    "event-types.manage": "Configure event types and availability",
+    "routing.manage": "Configure lead-routing rules",
+    "analytics.view": "View booking and routing analytics",
+    "assistant.ask": "Ask the routing copilot",
+    "access.manage": "Configure roles and identity mappings",
+    "settings.manage": "Manage workspace integrations and settings",
+  },
+  rolePermissions: {
+    owner: ["*"],
+    admin: ["*"],
+    manager: [
+      "dashboard.view",
+      "bookings.manage",
+      "event-types.manage",
+      "routing.manage",
+      "analytics.view",
+      "assistant.ask",
+    ],
+    host: ["dashboard.view", "bookings.manage", "event-types.manage", "assistant.ask"],
+    analyst: ["dashboard.view", "analytics.view", "assistant.ask"],
+    viewer: ["dashboard.view"],
+  } as Record<string, readonly string[]>,
+  identityGroupMappings: {
+    "openslot-owners": "owner",
+    "openslot-admins": "admin",
+    "revenue-managers": "manager",
+    "booking-hosts": "host",
+    "revenue-analytics": "analyst",
+  } as Record<string, string>,
+  defaultRole: "viewer",
+};
