@@ -3,6 +3,19 @@
   "version": "0.2.0",
   "private": true,
   "description": "Self-hosted scheduling and lead routing with enterprise SSO, RBAC, and AI-assisted operations.",
+  "author": {
+    "name": "ConseilTek",
+    "email": "support@conseiltek.com",
+    "url": "https://conseiltek.com"
+  },
+  "homepage": "https://conseiltek.com/techtons/openslot",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConseilTek-Tektons/openslot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ConseilTek-Tektons/openslot/issues"
+  },
   "license": "Apache-2.0",
   "engines": {
     "node": ">=22.0.0"

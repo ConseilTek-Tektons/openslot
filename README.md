@@ -9,7 +9,9 @@
 [![CodeQL](https://github.com/ConseilTek-Tektons/openslot/actions/workflows/codeql.yml/badge.svg)](https://github.com/ConseilTek-Tektons/openslot/actions/workflows/codeql.yml)
 [![License](https://img.shields.io/badge/license-Apache--2.0-a3ff12)](LICENSE)
 
-Openslot is a deployable ConseilTek reference application for managing event types, availability, round-robin pools, lead routing, bookings, and scheduling operations. The repository includes a polished dashboard, transactional API routes, a PostgreSQL schema that prevents double-booking, local enterprise identity, tests, container packaging, and validated infrastructure definitions.
+Scheduling looks simple until teams have to balance availability, ownership, routing rules, and a growing volume of meetings. ConseilTek built Openslot to bring those decisions into one clear workspace. Teams can publish booking types, route leads fairly, prevent double-booking at the database layer, and ask grounded operational questions without handing control to a hosted scheduling vendor.
+
+This repository is a working implementation, not a UI mockup. It includes the application, transactional APIs, PostgreSQL migrations, enterprise identity configuration, automated tests, container packaging, and validated infrastructure definitions for both AWS and Azure.
 
 ![Openslot application architecture](docs/architecture/application-flow.svg)
 
@@ -104,3 +106,7 @@ docs/architecture/       editable SVG architecture diagrams
 ## License
 
 Apache 2.0. See [LICENSE](LICENSE). The ConseilTek trademarks and supplied brand artwork remain the property of ConseilTek; the source code is licensed independently.
+
+## Ownership and stewardship
+
+Openslot is designed, built, and maintained by [ConseilTek](https://conseiltek.com). It is published through the ConseilTek Tektons organization as part of our open engineering portfolio. Questions, responsible security reports, and partnership inquiries can be sent to [support@conseiltek.com](mailto:support@conseiltek.com).
