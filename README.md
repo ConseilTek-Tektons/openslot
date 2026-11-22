@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="public/brand/mark-light.png" alt="ConseilTek" width="120" />
+  <img src="public/brand/logo.png" alt="ConseilTek" width="180" />
   <h1>Openslot</h1>
   <p><strong>Self-hosted scheduling and lead routing for teams that need control.</strong></p>
   <p>Enterprise SSO · feature-level RBAC · PostgreSQL · grounded AI · AWS and Azure infrastructure as code</p>
@@ -7,7 +7,7 @@
 
 [![CI](https://github.com/ConseilTek-Tektons/openslot/actions/workflows/ci.yml/badge.svg)](https://github.com/ConseilTek-Tektons/openslot/actions/workflows/ci.yml)
 [![CodeQL](https://github.com/ConseilTek-Tektons/openslot/actions/workflows/codeql.yml/badge.svg)](https://github.com/ConseilTek-Tektons/openslot/actions/workflows/codeql.yml)
-[![License](https://img.shields.io/badge/license-Apache--2.0-a3ff12)](LICENSE)
+[![License](https://img.shields.io/badge/license-Apache--2.0-222c62)](LICENSE)
 
 Scheduling looks simple until teams have to balance availability, ownership, routing rules, and a growing volume of meetings. ConseilTek built Openslot to bring those decisions into one clear workspace. Teams can publish booking types, route leads fairly, prevent double-booking at the database layer, and ask grounded operational questions without handing control to a hosted scheduling vendor.
 
